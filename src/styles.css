@@ -1,0 +1,84 @@
+@import url("http://fonts.cdnfonts.com/css/architects-daughter");
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2696aa;
+    font-family: "architects daughter", "Tangerine";
+    background-color: rgb(0, 70, 70);
+}
+
+.App {
+    text-align: center;
+}
+.Board button {
+    background-color: rgba(24, 26, 27, 0.9);
+    border: 1px solid #2696aa;
+    color: #2696aa;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 10vh;
+    height: 20vh;
+    width: 20vh;
+    text-align: center;
+    border-radius: 5%;
+    font-family: "architects daughter", "Tangerine";
+}
+.restart-btn {
+    cursor: pointer;
+    font-size: 5vh;
+    border-radius: 1vh;
+    border-color: #2696aa;
+    color: rgba(24, 26, 27, 1);
+    box-shadow: 0 0 40px 40px #2696aa inset, 0 0 0 0 #2696aa;
+    transition: all 150ms ease-in-out;
+}
+.restart-btn:hover {
+    box-shadow: 0 0 10px 0 #2696aa inset, 0 0 10px 4px #2696aa;
+    color: darkcyan;
+    background-color: lightcyan;
+}
+
+.Board {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1vh;
+    /* background-color: #2696aa; */
+    background-color: #2696aa;
+    border-radius: 2%;
+    height: 60vh;
+    width: 60vh;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .Board {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 1%;
+        /* background-color: #2696aa; */
+        background-color: #2696aa;
+        border-radius: 2%;
+        height: 300px;
+        width: 300px;
+    }
+
+
+    .Board button {
+        background-color: rgba(24, 26, 27, 0.9);
+        border: 1px solid #2696aa;
+        color: #2696aa;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 48px;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        border-radius: 5%;
+        font-family: "architects daughter", "Tangerine";
+    }
+
+}
